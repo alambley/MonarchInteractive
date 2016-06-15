@@ -1,0 +1,25 @@
+<script language="javascript">
+    function fbshareCurrentPage(){
+		window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+		return false; 
+	}
+	function tweetshareCurrentPage(){
+		window.open("http://twitter.com/share?url="+escape(window.location.href)+"&text="+document.title+': Mace %26 Crown Interactive Project', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+		return false; 
+	}
+</script>
+
+<!--share specific page-->
+	<!--<a id = "menu" target="popup" onclick="window.open('http://www.facebook.com/share.php?u=http://cs.odu.edu/~411black','name','width=600,height=200')">Share on Facebook</a>-->
+			
+<!--share current page-->
+	<!--<a id = "menu" href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook">Facebook</a>-->
+	
+	<a id = "menu" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+escape(window.location.href)+'&t='+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600')" alt="Share on Facebook">
+		  <img src="toolbarresources/facebook.png" style="width:25px;height:25px;"> 
+
+	</a>
+	
+	<a id = "menu" href="#" onclick="window.open('http://twitter.com/share?url='+escape(window.location.href)+'&text='+document.title+': Mace %26 Crown Interactive Project', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600')" alt = "Share of Tweeter">
+		<img src="toolbarresources/twitter.png" style="width:25px;height:25px;margin-left:5px;">
+	</a>
